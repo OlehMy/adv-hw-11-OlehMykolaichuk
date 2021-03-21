@@ -26,3 +26,22 @@ document.addEventListener('keyup', function(e) {
         };
     };
 });
+
+//For mobile
+for (let index = 0; index < key.length; index++) {
+    key[index].addEventListener('touchstart', function(e) {
+        if (e.type == "touchstart") {
+            piano[index].currentTime = 0;
+            piano[index].play();
+            key[index].classList.add('key_down');
+        };
+    });
+};
+
+document.addEventListener('touchend', function(e) {
+    for (let index = 0; index < key.length; index++) {
+        if (e.type == "touchend") {
+            key[index].classList.remove('key_down');
+        };
+    };
+});

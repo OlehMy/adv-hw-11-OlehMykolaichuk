@@ -70,7 +70,10 @@ h2 {
         font-size: 70px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .keys-box {
+        margin: 70px auto;
     }
     .key {
         width: 50px;
